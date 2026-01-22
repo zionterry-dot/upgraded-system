@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting to Xbox Cloud Gaming...</title>
-    <!-- This meta tag redirects the user immediately -->
-    <meta http-equiv="refresh" content="0; url=http://www.xbox.com">
-    
+    <title>Cloud Gaming Portal</title>
     <style>
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #107C10; /* Xbox Green */
-            color: white;
-            font-family: sans-serif;
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
-<body>
-    <p>Redirecting to Fortnite...</p>
+<body class="dark">
+    <!-- Embeds the direct Fortnite link to bypass landing page -->
+    <iframe src="https://www.xbox.com" 
+            allowfullscreen 
+            allow="autoplay; fullscreen; microphone; camera; gamepad">
+    </iframe>
 </body>
 </html>
